@@ -3,4 +3,6 @@ class Coin < ApplicationRecord
   belongs_to :user
 
   monetize :montante_cents
+
+  validates :montante, presence: true
 end
